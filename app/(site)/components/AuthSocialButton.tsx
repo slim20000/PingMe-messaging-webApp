@@ -1,44 +1,38 @@
-import Image from "next/image";
-import AuthForm from "./AuthForm";
+import { IconType } from "react-icons";
 
-const Auth = () => {
+interface AuthSocialButtonProps {
+  icon: IconType;
+  onClick: () => void;
+}
+
+const AuthSocialButton: React.FC<AuthSocialButtonProps> = ({
+  icon: Icon,
+  onClick,
+}) => {
   return (
-    <div
+    <button
+      type="button"
+      onClick={onClick}
       className="
-        flex 
-        min-h-full 
-        flex-col 
+        inline-flex
+        w-full 
         justify-center 
-        py-12 
-        sm:px-6 
-        lg:px-8 
-        bg-gray-100
+        rounded-md 
+        bg-white 
+        px-4 
+        py-2 
+        text-gray-500 
+        shadow-sm 
+        ring-1 
+        ring-inset 
+        ring-gray-300 
+        hover:bg-gray-50 
+        focus:outline-offset-0
       "
     >
-      <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <Image
-          height="48"
-          width="48"
-          className="mx-auto w-auto"
-          src="/images/logo.png"
-          alt="Logo"
-        />
-        <h2
-          className="
-            mt-6 
-            text-center 
-            text-3xl 
-            font-bold 
-            tracking-tight 
-            text-gray-900
-          "
-        >
-          Sign in to your account
-        </h2>
-      </div>
-      <AuthForm />
-    </div>
+      <Icon />
+    </button>
   );
 };
 
-export default Auth;
+export default AuthSocialButton;
