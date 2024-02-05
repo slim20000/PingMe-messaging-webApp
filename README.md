@@ -1,6 +1,6 @@
 # Real-Time Messaging App
 
-This is a real-time messaging application built with Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, and Pusher. You can check out the live app here.
+A real-time messaging web-app built with Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, and Pusher. You can check out the live app [here](https://ping-me-messaging-web-fm3j8c8z1-slim20000s-projects.vercel.app/).
 
 ## Features
 
@@ -40,5 +40,3 @@ This is a real-time messaging application built with Next.js 13, React, Tailwind
     ```
 3. Setup Prisma: `npx prisma db push`
 4. Start the app: `npm run dev`
-
-Enjoy your real-time messaging experience!
