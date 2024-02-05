@@ -33,3 +33,18 @@ This Real-Time Messaging App is built with Next.js 13, React, Tailwind, Prisma, 
 
    ```bash
    npm install
+
+   ## Setup .env File
+
+```dotenv
+DATABASE_URL=your_mongo_db_url
+NEXTAUTH_SECRET=your_nextauth_secret
+NEXT_PUBLIC_PUSHER_APP_KEY=your_pusher_app_key
+PUSHER_APP_ID=your_pusher_app_id
+PUSHER_SECRET=your_pusher_secret
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+GITHUB_ID=your_github_id
+GITHUB_SECRET=your_github_secret
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+
